@@ -1,0 +1,766 @@
+/* Animation d'affichage des élements */
+
+@keyframes anim{
+    0% {opacity: 0;}
+    50% { opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* Design pour PC */
+
+@media screen and (min-width:701px){
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin:0;
+        padding:0;
+        background-color: #222222;
+        color:white;
+        left:0;
+        top:0;
+        scroll-behavior: smooth;
+    }
+
+    .suggestions{
+        display:none;
+    }
+    
+    .menu{
+        margin:0;
+        padding:0;
+        text-align: center;
+        border-bottom: 1px solid rgb(143, 143, 143);
+        animation:anim 0.3s ease-out;
+    }
+    
+    .menu li{
+        list-style-type: none;
+        display:inline-block;
+        margin:1vh 20% 1vh 20%;
+    }
+    
+    .menu li a{
+        text-decoration: none;
+        color:red;
+        font-weight: bold;
+        font-size: 3vh;
+        letter-spacing: 3px;
+        transition: all 0.2s ease-out;
+    }
+    
+    .menu li a:hover{
+        opacity: 0.7;
+    }
+    
+    .menu li button{
+        color:#222222;
+        background-color:white;
+        border:none;
+        border-radius: 3px;
+        padding:2px 12px;
+        cursor: pointer;
+        transition:all 0.2s ease-out;
+        font-size: 2.5vh;
+    }
+    
+    .menu li button:hover{
+        opacity: 0.7;
+    }
+    
+    .banniere{
+        margin:0;
+        padding:0;
+        background-image: url("./banniere.jpg");
+        height:94vh;
+        background-size: cover;
+        text-align: center;
+    }
+    
+    .banniere h2{
+        margin-top: 8vh;
+        font-weight: bold;
+        font-size: 4vh;
+        color:rgb(255, 255, 255);
+        animation: anim 0.7s ease-out;
+    
+    }
+    
+    .banniere .scrolldown{
+        text-decoration: none;
+        color:white;
+        display: inline-block;
+        font-size: 22vh;
+        cursor: pointer;
+        margin-top:40.5vh;
+        transform: scale(0.7,0.3);
+        transition:all 0.2s ease-out;
+        animation: anim 0.8s ease-out;
+    
+    }
+    
+    .banniere .scrolldown:hover{
+        margin-top:41vh;
+        opacity: 0.6;
+    }
+    
+    .sousmenubutton{
+        display: none;
+    }
+    
+    .sousmenu{
+        text-align: center;
+        padding:0;
+        margin:0;
+        padding:3vh;
+        animation:anim 0.5s ease-out;
+    }
+    
+    .sousmenu li{
+        display: inline-block;
+        cursor: pointer;
+        margin:2vh 5% 2vh 5%;
+        background-color:red;
+        color:white;
+        border-radius: 30px;
+        transition:all 0.2s ease-out;
+        width: 10%;    
+    }
+    
+    .sousmenu li:hover{
+        opacity: 0.8;
+    }
+    
+    .sousmenu li a{
+        width: 100%;
+        display: inline-block;
+        text-decoration: none;
+        color:inherit;
+        font-weight: bold;
+        transition:all 0.2s ease-out;
+        padding:4px 0 4px 0;
+        font-size: 2.5vh;
+    
+    }
+    
+    
+    .debuter a{
+        border:1px solid red;
+        display: inline-block;
+        text-decoration: none;
+        margin:1vh 1.5px;
+        border:none;
+        cursor: pointer;
+        transition:all 0.2s ease-out;
+        background-color:white;
+        color:black;
+        padding:4px 45px;
+        font-size: 3vh;
+        animation: anim 0.7s ease-out;
+    
+    
+    }
+    
+    .debuter a:hover{
+        opacity: 0.8;
+        font-size:3vh;
+    }
+    
+    .debuter a:first-child{
+        border-radius: 30px 0 0 30px;
+    }
+    
+    .debuter a:last-child{
+        border-radius: 0 30px 30px 0;
+    }
+    
+    
+    
+    
+    
+    .vidcomdiv{
+        float:left;
+        width:66%;
+        padding:5px 10px;
+        height:91vh;
+        overflow-y: scroll;
+    }
+    
+    .vidcomdiv input{
+        margin:20px 8px 20px 5px;
+        border:none;
+        border-bottom: 1px solid white;  
+        background-color: inherit;
+        color:white;  
+    }
+    
+    .vidcomdiv input::placeholder{
+        color:gainsboro;
+        font-size: 2.5vh;
+    }
+    
+    .vidcomdiv h2{
+        padding:0;
+        margin:5px 0 15px 10px;
+    }
+    
+    .vidcomdiv .sendiv{
+        text-align: center;
+        margin:5px 10px 0 10px;
+    }
+    
+    iframe{
+        border:none;
+        width: 100%;
+        height:75%;
+    }
+    
+    
+    
+    .commentaire{
+        margin:11px 25px;
+        padding: 2px 10px;
+        border-left:3px solid rgb(170, 170, 170);
+        background-color:#353535;
+    }
+    
+    .pseudoinput{
+        width:15%;
+        text-align: center;
+    }
+    
+    .cominput{
+        width: 45%;
+        text-align: left;
+        padding-left:10px;
+    }
+    
+    .vidcomdiv button{
+        cursor: pointer;
+        background-color:red;
+        color:white;
+        border:none;
+        padding:3px 20px;
+        transition:all 0.2s ease-out;
+    }
+    
+    .vidcomdiv button:hover{
+        opacity: 0.7;
+    }
+    
+    
+    
+    .searchdiv{
+        text-align: center;
+        float:right;
+        width: 31%;
+        padding:5px 5px;
+        height:91vh;
+        overflow-y: scroll;
+    
+    }
+    
+    .searchdiv input{
+        margin:10px 0 35px 0;
+        width:75%;
+        height:30px;
+        border:none;
+        border-radius: 40px 0 0 40px;
+        padding-left:10px;
+    }
+    
+    .searchdiv input::placeholder{
+        color:rgb(87, 87, 87);
+    }
+    
+    .searchdiv button{
+        border:none;
+        border-radius: 0 40px 40px 0;
+        height:32px;
+        width:12%;
+        margin-left: 2px;
+        color:white;
+        background-color:red;
+        cursor: pointer;
+        transition: all 0.2s ease-out;
+    }
+    
+    .searchdiv button:hover{
+        opacity: 0.8;
+    }
+    
+    .searchdiv img{
+        width:30%;
+        height:15vh;
+    }
+    
+    .vidiv{
+        margin:15px 5px;
+        height:18vh;
+        width:90%;
+        overflow-x: hidden;
+        padding-left:5px;
+        background-color:#353535;
+        transition:all 0.2s ease-out;
+        cursor: pointer;
+    }
+    
+    .vidiv:hover{
+        opacity:0.7;
+    }
+    
+    .vidiv img{
+        padding:0;
+        float:left;
+        margin-top:5px;
+        margin-right:10px;
+        height: 92%;
+    }
+    
+    .vidiv h5{
+        padding:0;
+        margin:10px 1px 0 0;
+        text-align:left;
+    }
+    
+    .propositionitems{
+        padding:0;
+        margin:20px 80px;
+        text-align: center;
+    }
+    
+    .propositionitems li {
+        padding:0;
+        display: inline-block;
+        list-style-type: none;
+        width:25%;
+        margin:2vh 2% 0 2%;
+        cursor: pointer;
+        transition:all 0.2s ease-out;
+    
+    }
+    
+    .propositionitems li h3 {
+        width: 100%;
+        height: 15vh;
+        overflow: hidden;
+        font-size: 3vh;
+        
+    }
+    
+    .propositionitems li:hover img{
+        opacity: 0.7;
+        background-color:gray;
+        width:100%;
+        height:47vh;
+    }
+    
+    .propositionitems li img{
+        border-radius: 5px;
+        width:95%;
+        height:45vh;
+        padding:0;
+        margin:0;
+        transition: all 0.2s ease-out;
+    }
+    
+    
+    .propositions{
+        text-align: center;
+        margin-top:10vh;
+        animation:anim 1s ease-out;
+    }
+    
+    
+}
+
+
+/* Design pour mobiles */
+
+@media screen and (max-width:701px){
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin:0;
+        padding:0;
+        background-color: #222222;
+        color:white;
+        left:0;
+        top:0;
+        scroll-behavior:smooth;
+        height: 100vh;
+        overflow-y: auto;
+        
+
+    }
+
+    h2{
+        font-size: 25px;
+        margin-bottom: 46px;
+    }
+    
+    .menu{
+        margin:0;
+        padding:0;
+        text-align: center;
+        border-bottom: 1px solid rgb(143, 143, 143);
+        animation:anim 0.3s ease-out;
+    }
+    
+    .menu li{
+        list-style-type: none;
+        display:inline-block;
+        margin:5px 12% 5px 14%;
+    }
+    
+    .menu li a{
+        text-decoration: none;
+        color:red;
+        font-weight: bold;
+        font-size: 19px;
+        letter-spacing: 3px;
+        transition: all 0.2s ease-out;
+    }
+    
+    .menu li a:hover{
+        opacity: 0.7;
+    }
+    
+    .menu li button{
+        color:#222222;
+        background-color:white;
+        border:none;
+        border-radius: 3px;
+        padding:2px 12px;
+        cursor: pointer;
+        transition:all 0.2s ease-out;
+        font-size: 17px;
+    }
+    
+    .menu li button:hover{
+        opacity: 0.7;
+    }
+    
+    .banniere{
+        margin:0;
+        padding:0;
+        background-image: url("./banniere.jpg");
+        height: 590px;
+        background-size: cover;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .banniere h2{
+        padding-top: 75px;
+        font-weight: bold;
+        font-size: 22px;
+        color:rgb(255, 255, 255);
+        animation: anim 0.7s ease-out;
+    
+    }
+    
+    .banniere .scrolldown{
+        text-decoration: none;
+        color:white;
+        display: inline-block;
+        font-size: 130px;
+        cursor: pointer;
+        margin-top:100px;
+        transform: scale(0.7,0.3);
+        transition:all 0.2s ease-out;
+        animation: anim 0.8s ease-out;
+    
+    }
+    
+    .banniere .scrolldown:hover{
+        margin-top:110px;
+        opacity: 0.6;
+    }
+    
+    .sousmenubutton{
+        display: block;
+        border:none;
+        background-color: transparent;
+        color:white;
+        font-weight: bold; 
+        font-size: 45px;
+        margin:0 3% 5px 0;
+        padding:0;
+        cursor: pointer;
+        float: right;
+        transition: all 0.3s linear;
+    }
+    
+    .sousmenu{
+        border:none;
+        text-align: center;
+        padding:0;
+        margin:0;
+        padding:40px 5px 0 5px;
+        animation:anim 0.5s ease-out;
+    }
+    
+    .sousmenu li{
+        display: block;
+        cursor: pointer;
+        margin:23px 20% 18px 20%;
+        background-color:red;
+        color:white;
+        border-radius: 30px;
+        transition:all 0.2s ease-out;
+    }
+    
+    .sousmenu li:hover{
+        opacity: 0.8;
+    }
+    
+    .sousmenu li a{
+        width: 100%;
+        display: inline-block;
+        text-decoration: none;
+        color:inherit;
+        font-weight: bold;
+        transition:all 0.2s ease-out;
+        padding:4px 0 4px 0;
+        font-size: 16px;
+    
+    }
+    
+    
+    .debuter a{
+        border:1px solid red;
+        display: inline-block;
+        text-decoration: none;
+        margin:5px;
+        border:none;
+        cursor: pointer;
+        transition:all 0.2s ease-out;
+        background-color:white;
+        color:black;
+        padding:4px 45px;
+        font-size: 18px;
+        animation: anim 0.7s ease-out;
+        border-radius: 30px;
+        width: 40%;
+    }
+    
+    .debuter a:hover{
+        opacity: 0.8;
+    }
+    
+
+    .propositionitems{
+        padding:0;
+        margin:20px 40px;
+        text-align: center;
+    }
+    
+    .propositionitems li {
+        padding:0;
+        display: block;
+        list-style-type: none;
+        margin:5px;
+        cursor: pointer;
+        transition:all 0.2s ease-out;
+    
+    }
+    
+    .propositionitems li h3 {
+        width: 100%;
+        height: 85px;
+        overflow: hidden;
+        font-size: 17px;
+        
+    }
+    
+
+    
+    .propositionitems li img{
+        border-radius: 5px;
+        width:95%;
+        height:250px;
+        padding:0;
+        margin:0;
+        transition: all 0.2s ease-out;
+    }
+    
+    
+    .propositions{
+        text-align: center;
+        margin-top:80px;
+        animation:anim 1s ease-out;
+    }
+    
+    
+    
+    
+    
+    .vidcomdiv{
+        padding:5px 8px;
+        overflow-y: scroll;
+        animation:anim 0.3s ease-out;
+
+    }
+    
+    .vidcomdiv input{
+        margin:20px 2px 20px 2px;
+        border:none;
+        border-bottom: 1px solid white;  
+        background-color: inherit;
+        color:white;  
+    }
+    
+    .vidcomdiv input::placeholder{
+        color:gainsboro;
+        font-size: 15px;
+    }
+    
+    .vidcomdiv h2{
+        padding:0;
+        margin:5px 5px 15px 10px;
+        font-size: 20px;
+    }
+    
+    .vidcomdiv .sendiv{
+        text-align: center;
+        margin:22px 0px 0 0px;
+    }
+    
+    iframe{
+        border:none;
+        width: 100%;
+        height:300px;
+        overflow: hidden;
+    }
+    
+    
+    
+    .commentaire{
+        margin:11px 15px;
+        padding: 2px 10px;
+        border-left:2px solid rgb(170, 170, 170);
+        background-color:#353535;
+    }
+
+    .commentaire h4{
+        font-size: 15px;
+    }
+
+    
+    .pseudoinput{
+        width:20%;
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .cominput{
+        width: 52%;
+        text-align: left;
+        padding-left:10px;
+        font-size: 16px;
+
+    }
+    
+    .vidcomdiv button{
+        cursor: pointer;
+        background-color:red;
+        color:white;
+        border:none;
+        padding:3px 15px;
+        transition:all 0.2s ease-out;
+        overflow: hidden;        
+    }
+    
+    .vidcomdiv button:hover{
+        opacity: 0.7;
+    }
+    
+    
+
+    
+    .searchdiv{
+        text-align: center;
+        padding:5px 5px;
+        animation:anim 0.1s ease-out;
+
+    }
+    
+    .searchdiv input{
+        margin:10px 0 20px 0;
+        width:75%;
+        height:30px;
+        border:none;
+        border-radius: 40px 0 0 40px;
+        padding-left:10px;
+        font-size: 15px;
+    }
+    
+    .searchdiv input::placeholder{
+        color:rgb(87, 87, 87);
+    }
+    
+    .searchdiv button:first-of-type{
+        border:none;
+        border-radius: 0 40px 40px 0;
+        height:33px;
+        font-size: 15px;
+        width:12%;
+        margin-left: 2px;
+        color:white;
+        background-color:red;
+        cursor: pointer;
+        transition: all 0.2s ease-out;
+    }
+
+    .searchdiv button:last-of-type{
+        border:none;
+        padding:2px 10px;
+        background-color: transparent;
+        color:white;
+        border-bottom: 1px solid white;
+        cursor: pointer;
+        transition:all 0.2s ease-out;
+    }
+    
+    .searchdiv button:hover{
+        opacity: 0.8;
+    }
+    
+    .searchdiv img{
+        width:30%;
+        height:100px;
+    }
+    
+    .vidiv{
+        display: none;
+        margin:15px 5px;
+        height:100px;
+        overflow-x: hidden;
+        padding-left:5px;
+        background-color:#353535;
+        transition:all 0.2s ease-out;
+        cursor: pointer;
+        animation:anim 0.1s ease-out;
+    }
+    
+    .vidiv:hover{
+        opacity:0.7;
+    }
+    
+    .vidiv img{
+        padding:0;
+        float:left;
+        margin-top:5px;
+        margin-right:10px;
+        height: 92%;
+    }
+    
+    .vidiv h5{
+        padding:0;
+        margin:10px 1px 0 0;
+        text-align:left;
+    }
+
+    
+    
+    
+    
+}
